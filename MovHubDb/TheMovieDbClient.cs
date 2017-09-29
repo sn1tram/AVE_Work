@@ -9,7 +9,7 @@ namespace MovHubDb
     {
         
         /// <summary>
-        /// e.g.: https://api.themoviedb.org/3/search/movie?api_key=bdfb152cef1990377f7fd876d8cf05bb&query=war%20games
+        /// e.g.: https://api.themoviedb.org/3/search/movie?api_key=*****&query=war%20games
         /// </summary>
         public MovieSearchItem[] Search(string title, int page)
         {
@@ -17,21 +17,21 @@ namespace MovHubDb
         }
 
         /// <summary>
-        /// e.g.: https://api.themoviedb.org/3/movie/508?api_key=bdfb152cef1990377f7fd876d8cf05bb
+        /// e.g.: https://api.themoviedb.org/3/movie/508?api_key=*****
         /// </summary>
         public Movie MovieDetails(int id) {
             return new Movie();
         }
 
         /// <summary>
-        /// e.g.: https://api.themoviedb.org/3/movie/508/credits?api_key=bdfb152cef1990377f7fd876d8cf05bb
+        /// e.g.: https://api.themoviedb.org/3/movie/508/credits?api_key=*****
         /// </summary>
         public CreditsItem[] MovieCredits(int id) {
             return new CreditsItem[0];
         }
 
         /// <summary>
-        /// e.g.: https://api.themoviedb.org/3/person/3489?api_key=bdfb152cef1990377f7fd876d8cf05bb
+        /// e.g.: https://api.themoviedb.org/3/person/3489?api_key=*****
         /// </summary>
         public Person PersonDetais(int actorId)
         {
@@ -39,11 +39,10 @@ namespace MovHubDb
         }
 
         /// <summary>
-        /// e.g.: https://api.themoviedb.org/3/person/3489/movie_credits?api_key=bdfb152cef1990377f7fd876d8cf05bb
+        /// e.g.: https://api.themoviedb.org/3/person/3489/movie_credits?api_key=*****
         /// </summary>
         public MovieSearchItem[] PersonMovies(int actorId) {
             return new MovieSearchItem[0];
         }
-        
     }
 }
